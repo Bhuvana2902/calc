@@ -1,0 +1,31 @@
+<!Doctype html>
+<html>
+<head>
+<title> Calculator </title>
+</head>
+<body align=center>
+<form method="post">
+<label for="var_1">NUMBER1 </label>
+<input type="number" name="var_1" value="{{request.form[‘var_1’]}}" placeholder="0">
+<br>
+<label for="var_2">NUMBER2 </label>
+<input type="number" name="var_2" value="{{request.form[‘var_2]’}}" placeholder="0">
+<br>
+<label for="operation">operation</label>
+<select name="operation">
+<option>Addition</option>
+<option>Subtraction</option>
+<option>Multiplication</option>
+<option>Division</option>
+</select><br>
+<label for="result">RESULT</label>
+<input type="text" value="result" placeholder="{{entry}}">
+<br>
+<input type="submit" value="Submit">
+<br>
+<input type="reset" value="Reset">
+<br>
+</form>
+</body>
+</html>
+
